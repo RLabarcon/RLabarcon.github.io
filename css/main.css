@@ -1,0 +1,344 @@
+@import 'color.css';
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Custom Fonts */
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/eot/proximanova-bold-webfont.eot');
+  src: url('../fonts/eot/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/woff2/proximanova-bold-webfont.woff2') format('woff2'),
+       url('../fonts/woff/proximanova-bold-webfont.woff') format('woff'),
+       url('../fonts/ttf/proximanova-bold-webfont.ttf') format('truetype'),
+       url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/eot/FiraSans-Regular.eot');
+  src: local('Fira Sans Regular'),
+     url('../fonts/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+     url('../fonts/woff2/FiraSans-Regular.woff2') format('woff2'),
+     url('../fonts/woff/FiraSans-Regular.woff') format('woff'),
+     url('../fonts/ttf/FiraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: url('eot/FiraSans-Medium.eot');
+  src: local('Fira Sans Medium'),
+       url('../fonts/eot/FiraSans-Medium.eot') format('embedded-opentype'),
+       url('../fonts/woff2/FiraSans-Medium.woff2') format('woff2'),
+       url('../fonts/woff/FiraSans-Medium.woff') format('woff'),
+       url('../fonts/ttf/FiraSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: url('../fonts/eot/FiraSans-Bold.eot');
+  src: local('Fira Sans Bold'),
+       url('../fonts/eot/FiraSans-Bold.eot') format('embedded-opentype'),
+       url('../fonts/woff2/FiraSans-Bold.woff2') format('woff2'),
+       url('../fonts/woff/FiraSans-Bold.woff') format('woff'),
+       url('../fonts/ttf/FiraSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Typographical Styling */
+
+h1 {
+  font-size: 5.6em;
+  line-height: .85em;
+  font-family: 'proxima_nova_rgbold';
+}
+.header  {
+  margin-top: 77vh;
+  z-index: 5;
+}
+
+p.subheader {
+  font-size: 1.8em;
+  line-height: 1.0em;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.6em;
+  line-height: 1.4em;
+  font-family: 'Fira Sans';
+  font-weight: 400;
+
+}
+
+.body {
+  white-space: pre-line;
+}
+
+p.comment {
+  position: relative;
+  top:-25px;
+  padding: 20px;
+  font-size: 2.2em;
+  line-height: 1.4em;
+  font-family: 'Fira Sans';
+  font-weight: 700;
+}
+
+/* Structural Items */
+
+#content-large {
+  position: relative;
+  left: 0em;
+  height: 100%;
+  margin: 0 0 0 35vw;
+}
+
+#console-large {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 20vw;
+  width: 33vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #111213;
+}
+
+.body {
+  max-width: 700px;
+  margin-top: 2em;
+  padding: 0 1em 0 1em;
+}
+.exhibit {
+	position: relative;
+	top: -155px;
+	height: 60vh;
+	left: -0.5em;
+}
+.exhibit img {
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 90vh;
+}
+
+.exhibit a {
+  position: relative;
+  top: 72px;
+  outline: 0;
+}
+.zoom {
+  width: 32px;
+  height: 32px;
+  z-index: 5;
+}
+
+.title {
+  position: relative;
+  max-width: 80vw;
+  width:64vw;
+  margin-left: -12px;
+  padding: 1em 0 1em 2em;
+  height: auto;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+footer {
+  background-color: #111213;
+  width: 98%;
+  height: 80px;
+  position: relative;
+  right: 0.5em;
+}
+
+footer p {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 1em;
+  position: absolute;
+  top: 40%;
+  right: 1em;
+}
+
+footer p:hover {
+  color: #eee;
+}
+/* Console Items */
+
+#logo {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 110px;
+  width: 200px;
+  margin: auto;
+  z-index: 3;
+}
+
+#title {
+  padding: 0 10px;
+  font-size: 0.50em;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 110px; 
+  width: 230px;
+  margin: auto;
+  z-index: 3;
+}
+
+#title p.subheader {
+  margin-top: -5px;
+}
+
+#overlay {
+  background-color: #121213;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+/* Navigation */
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.content-arrow {
+	top: 50vh;
+	visibility: visible;
+}
+
+.left.content-arrow {
+	left: -25px;
+}
+
+.console-arrow {
+	top: -50vh;
+	visibility: hidden;
+}
+
+.arrow {
+  position: relative;
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  transform: translateY(-50%);
+}
+
+.clip { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+}	
+
+.left-inactive { 
+	clip: rect(0 50px 50px 0); 
+}
+
+.right-inactive { 
+	clip: rect(0 100px 50px 50px); 
+	left: -50px; 
+}
+
+.left-active {
+	clip: rect(85px 50px 142px 0);
+	top: -85px;
+}
+
+.right-active {
+	clip: rect(85px 100px 142px 50px);
+	top: -85px;
+	left: -50px; 
+}
+
+/* Links and shit */
+.nav-links {
+	position: relative;
+	top:50px;
+}
+
+#logo hr {
+  position: relative;
+  width: 50px;
+  left: -90px;
+}
+
+#title hr {
+  position: relative;
+  width: 50px;
+  left: -90px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  line-height: 2em;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 1.4em;
+  /* Keep from selecting links */
+  -webkit-user-select: none;
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none;
+
+}
+
+.nav-links li a {
+  text-align: left;
+  text-decoration: none;
+  color: #555;
+  outline: 0;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: #eee;
+}
+
+#logo .nav-links li {
+  margin-left: -40px;
+}
+
+#title .nav-links {
+  padding: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40vh;
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 90px;
+  letter-spacing: 1em;
+  text-align: center;
+}
+
+#title .nav-links li {
+
+  text-align: center;
+}
+
