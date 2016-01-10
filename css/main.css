@@ -61,6 +61,7 @@ h1 {
 .header  {
   margin-top: 77vh;
   z-index: 5;
+  letter-spacing: -1px;
 }
 
 p.subheader {
@@ -69,6 +70,7 @@ p.subheader {
   font-family: 'Fira Sans';
   font-weight: 500;
   margin-bottom: 0.5em;
+  letter-spacing: 1px;
 }
 
 p {
@@ -76,7 +78,10 @@ p {
   line-height: 1.4em;
   font-family: 'Fira Sans';
   font-weight: 400;
+}
 
+p b {
+  font-weight: 500;
 }
 
 .body {
@@ -120,30 +125,7 @@ p.comment {
   margin-top: 2em;
   padding: 0 1em 0 1em;
 }
-.exhibit {
-	position: relative;
-	top: -155px;
-	height: 60vh;
-	left: -0.5em;
-}
-.exhibit img {
-  position: relative;
-  margin: 0 auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 90vh;
-}
 
-.exhibit a {
-  position: relative;
-  top: 72px;
-  outline: 0;
-}
-.zoom {
-  width: 32px;
-  height: 32px;
-  z-index: 5;
-}
 
 .title {
   position: relative;
@@ -159,25 +141,69 @@ p.comment {
   z-index: 0;
 }
 
+.onepage {
+  height: 98vh;
+}
+
+.onepage h1 {
+  position: relative;
+  left: 10px;
+}
+.onepage p.subheader {
+  position: relative;
+  left: 10px;
+}
+
+.contact p {
+  position: relative;
+  float:right;
+}
+
 footer {
   background-color: #111213;
-  width: 98%;
+  display: block;
+  width: 97%;
   height: 80px;
-  position: relative;
-  right: 0.5em;
+  position: absolute;
+  bottom:0;
+  z-index: 0;
 }
 
 footer p {
   font-family: 'proxima_nova_rgbold';
   font-size: 1em;
-  position: absolute;
+  position: relative;
   top: 40%;
-  right: 1em;
+  left: 1em;
+  z-index: 3;
 }
 
 footer p:hover {
   color: #eee;
 }
+
+ul.share-buttons {
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+  left: -15px;
+  top: -64px;
+}
+ul.share-buttons li{
+  display: inline;
+  opacity: 0.2;
+
+}
+ul.share-buttons li:hover {
+  opacity: 1.0;
+}
+
+ul.share-buttons img {
+	width: 20px;
+	height: 20px;
+}
+
+
 /* Console Items */
 
 #logo {
@@ -210,7 +236,7 @@ footer p:hover {
   margin-top: -5px;
 }
 
-#overlay {
+.overlay {
   background-color: #121213;
   width: 100%;
   height: 100%;
@@ -329,7 +355,7 @@ footer p:hover {
   display: block;
   position: absolute;
   left: 50%;
-  top: 40vh;
+  top: 32vh;
   transform: translateX(-50%);
   bottom: 20px;
   width: 90px;
@@ -338,7 +364,61 @@ footer p:hover {
 }
 
 #title .nav-links li {
-
   text-align: center;
 }
 
+/* Catalog page */
+
+.tile {
+  display: block;
+  float:left;
+  margin: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: left;
+}
+
+.tile h1{
+  position: relative;
+  width: 250px;
+  left: 50%;
+  top: -28vh;
+  transform: translateX(-50%);
+  font-size: 4em;
+  text-align: center;
+  z-index: 3;
+}
+
+.tile p{
+  position: relative;
+  width: 250px;
+  left: 50%;
+  top: -28.5vh;
+  transform: translateX(-50%);
+  font-size: 1em;
+  text-align: center;
+}
+
+.full-width {
+  width: 96%;
+  height: 35vh;
+  background-color: #222;
+}
+
+.half-width {
+  width: 47%;
+  height: 35vh;
+  background-color: #222;
+}
+.third-width {
+  width: 31%;
+  height: 35vh;
+  background-color: #222;
+}
+
+.full {
+  width: 96%;
+  height: 35vh;
+  background-color: #222;
+}
