@@ -4,8 +4,8 @@ $(document).ready(function() {
 	    var scroll = $(window).scrollTop();
 
 	    if (scroll < 960) {
-	    	$('#title').fadeOut("fast", function() { 
-	    		$('#logo').fadeIn("fast");
+	    	$('#title').fadeOut("slow", function() { 
+	    		$('#logo').fadeIn("slow");
 	    	});
 	    	
 	    	$('#console-large').removeClass("picture");
@@ -13,8 +13,8 @@ $(document).ready(function() {
 	    } 
 	    else if (scroll > 960){
 	    	$('#title').css("visibility, visible");
-	    	$('#logo').fadeOut("fast", function() {
-	    		$('#title').fadeIn("fast");
+	    	$('#logo').fadeOut("slow", function() {
+	    		$('#title').fadeIn("slow");
 	    		$('#console-large').addClass("picture");
 	    		$('.console-arrow').css('visibility', 'visible');
 	    	});
