@@ -104,7 +104,7 @@ p.comment {
   position: relative;
   left: 0em;
   height: 100%;
-  margin: 0 0 0 35vw;
+  margin: 0 10px 0 35vw;
 }
 
 #console-large {
@@ -162,7 +162,7 @@ p.comment {
 footer {
   background-color: #111213;
   display: block;
-  width: 97%;
+  width: 96%;
   height: 80px;
   position: absolute;
   bottom:0;
@@ -386,7 +386,7 @@ ul.share-buttons img {
   top: -28vh;
   transform: translateX(-50%);
   font-size: 4em;
-  text-align: center;
+  text-align: left;
   z-index: 3;
 }
 
@@ -397,7 +397,7 @@ ul.share-buttons img {
   top: -28.5vh;
   transform: translateX(-50%);
   font-size: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 .full-width {
