@@ -4,18 +4,17 @@ $(document).ready(function() {
 	    var scroll = $(window).scrollTop();
 
 	    if (scroll < 960) {
-	    	$('#title').fadeOut("slow", function() { 
-	    		$('#logo').fadeIn("slow");
+	    	$('#title').fadeOut("fast", function() { 
+	    		$('#logo').fadeIn("fast");
 	    	});
-	    	
-	    	$('#console-large').removeClass("picture");
+	    	$('#console-large').removeClass("ruby");
 	    	$('.console-arrow').css('visibility', 'hidden');
 	    } 
 	    else if (scroll > 960){
 	    	$('#title').css("visibility, visible");
 	    	$('#logo').fadeOut("slow", function() {
-	    		$('#title').fadeIn("slow");
-	    		$('#console-large').addClass("picture");
+	    		$('#title').fadeIn("fast");
+	    		$('#console-large').addClass("ruby");
 	    		$('.console-arrow').css('visibility', 'visible');
 	    	});
 	    	

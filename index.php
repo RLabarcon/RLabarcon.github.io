@@ -1,19 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <?php include 'head.php';?>
     </head>
 
     <body>
@@ -33,9 +21,9 @@
         </ul>
 
         <div id="title" style="display: none;">
-            <h1 class="header">Becoming<br />A Rubyist</h1>
-            <p class="subheader">Episode 1: Building my first RoR app</p>
-            <p class="white">13 JAN 2016</p>
+            <h1 class="white">The<br />Wanderer</h1>
+            <p class="white subheader">Searching for meaning since 1996</p>
+            <p class="white">9 JAN 2016</p>
             <ul class="nav-links">
                 <li><a href="index.html">Latest</a></li>
                 <li><a href="catalog.html">Catalog</a></li>
@@ -69,7 +57,7 @@
 
     <div id="content-large">
 
-        <div class="ruby title white">
+        <div class="picture title white">
 
             <div class="left arrow content-arrow">
                 <img src="./img/arrows.png" alt="arrow" class="clip left-inactive" />
@@ -79,8 +67,8 @@
                 <img src="./img/arrows.png" alt="arrow" class="clip right-inactive" />
             </div>
 
-            <h1 class="header">Becoming<br />A Rubyist</h1>
-            <p class="subheader">Episode 1: Building my first RoR app</p>
+            <h1 class="header">The<br />Wanderer</h1>
+            <p class="subheader">Searching for meaning since 1996</p>
 
         </div>
 
@@ -100,21 +88,21 @@
 
         I could have everything just the way I'd like it, and I would have something to show for my ongoing efforts to learn this magical craft.
 
-        It's a win, any way I look at it.
+        It's a win any way I look at it.
 
-        At first, I considered building a PHP/SQL-powered site. I don't know PHP all that well, but what I'd seen of it suggested that it would work well.
+        I think a PHP-powered site is what I'll build. I don't know PHP all that well, but I think that's what I'll do. What I've seen of it suggests that I can make my site very modular, in a sense. I can link files to other files, include code within code within code. I can edit a single file and it'll change the look or behavior of that element everywhere on the site, which would be incredibly convenient for me.
 
-        With PHP, I could make my site modular. I could create files out of elements and link to those where I need them throughout the site. I could include code within code within code, the beauty in which is the ability to edit a single file once and have it change the look or behavior of that element on every page all across the site, which would make updating everything and expanding the experience incredibly convenient for me.
+        SQL seems like a good way to store posts. It uses things that look like structs from C--a series of variables assigned to a certain object--and stores them in a table.
 
-        SQL would be the back end, and would serve as storage for the posts.
+        Thanks to Harvard's CS50x course, I have a reasonable familiarity with these languages. Not only does the project sound like a lot of fun, but it also <i>might</i> count as a final project.
 
-        Then I found a way to make this a bit more challenging and significantly more interesting: Build it as a Ruby-on-Rails app. 
+        In these following days, until the project is finished, you have this.
 
-        While I have a very limited familiarity with PHP and SQL, I have a little more familiarity with Ruby. It's my language of choice for the time being, and learning Rails will be fascinating and valuable experience that'll improve my value as a web developer.
+        Welcome to my corner of the webspace.
 
-        In the time until the project is finished, you have this--a meta-blog of sorts, fixated solely on the subject of its own construction. 
+        The secondary point of this project is to actually blog. Sharing thoughts with the aether is something I want to start doing. It seems like a good way to develop my ideas into content worth consuming, and I could do with getting back into writing. 
 
-        Any and all of my consumership is encouraged to get in contact with me to share their thoughts. Want to start a dialogue about something? <a href="about.html">Let's talk.</a>
+        Any and all of my consumership is encouraged to get in contact with me to share their thoughts. Want to start a dialogue about something? <a href="about.html">Let's talk.</a><
         </p>
 
         </div>
